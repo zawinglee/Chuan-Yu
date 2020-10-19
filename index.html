@@ -1170,10 +1170,10 @@
                 if (word.length > 0) {
                     document.getElementById('word').innerHTML += word.shift();
                 } else {
-                    deletingEffect();
-                    return false;
+                    // deletingEffect();
+                    // return false;
                 };
-                timer = setTimeout(loopTyping, 500);
+                timer = setTimeout(loopTyping, 380);
             };
             loopTyping();
         };
