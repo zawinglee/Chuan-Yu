@@ -26,6 +26,7 @@
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
     <!-- Theme Style -->
     <link rel="stylesheet" href="css/style.css">
@@ -39,7 +40,6 @@
 
         gtag('config', 'UA-180797437-1');
     </script>
-
 
 </head>
 <body class="bg-light">
@@ -77,14 +77,19 @@
 
     <div class="main-wrap" id="section-home">
         <div class="cover_1 overlay bg-light">
-            <div class="img_bg" style="background-image: url(images/hero.jpg); opacity: 0.7;"
+            <div class="img_bg" style="background-image: url(images/hero.jpg); opacity: 0.8;"
                  data-stellar-background-ratio="0.5">
                 <div class="container">
                     <div class="row align-items-center justify-content-center text-center">
                         <div class="col-md-10" data-aos="fade-up">
-                            <h2 class="heading mb-5 smoothscroll px-5 py-3"
-                                style="font-weight: bold; background: rgba(170,3,3,1); display: inline-block; border: 2px solid black;">
-                                Chuan Yu Bistro</h2>
+<!--                            <h2 class="heading mb-5 smoothscroll px-5 py-3"-->
+<!--                                style="font-weight: bold; background: rgba(170,3,3,1); display: inline-block; border: 2px solid black;">-->
+<!--                                Chuan Yu Bistro</h2>-->
+                            <div class="container flex">
+                                <p class="heading mb-5 smoothscroll px-5 py-3" id="word"
+                                   style="font-weight: bold; background: rgba(170,3,3,0.8); display: inline-block;"></p>
+                                    <p class="heading mb-5 smoothscroll px-5 py-3 blink" style="margin-left: -100px;">|</p>
+                            </div>
                             <p><a class="smoothscroll btn btn-outline-white px-5 py-3" style="background:rgba(170,3,3,1); " target="_blank" href="https://goo.gl/maps/YhNSzXEQQM2QCszN6">
                               🚗 388 9th St, #268, <br>Oakland, CA 94607</a></p>
                             <p><a href="#section-menu" class="smoothscroll btn btn-outline-white px-5 py-3"
@@ -223,7 +228,7 @@
             <div class="container">
                 <div class="row section-heading justify-content-center mb-5">
                     <div class="col-md-8 text-center">
-                        <h2 class="heading mb-3">📕&nbsp;Menu & Hours&nbsp;⏰<br>菜單和營業時間</h2>
+                        <h2 class="heading mb-3" style="font-family: 'Pacifico', cursive;">📕&nbsp;Menu & Hours&nbsp;⏰<br>菜單和營業時間</h2>
                         <p class="sub-heading mb-3" style="margin-top: 50px">☎️ (510) 891-1781</p>
                         <p class="sub-heading mb-3">📅 Everyday (except Wednesday)</p>
                         <p class="sub-heading mb-3">每天（週三除外）</p>
@@ -253,7 +258,7 @@
                     <div class="col-md-8">
 <!--                        <h2 class="heading mt-3" style="text-align: center;">Categories 菜列: </h2>-->
                         <ul class="nav site-tab-nav" id="pills-tab" role="tablist" style="border: 2px solid grey; border-radius: 30px; padding-bottom: 20px;">
-                            <li><h2 class="heading mt-3">Categories 菜列:</h2></li>
+                            <li><h2 class="heading mt-3" style="font-family: 'Pacifico', cursive;">Categories 菜列</h2></li>
                             <br>
                             <li class="nav-item">
                                 <a class="nav-link active" id="pills-sichuan-tab" data-toggle="pill"
@@ -1153,7 +1158,48 @@
         </footer>
 
     </div>
+    <script>
+        //https://codepen.io/haaswill/pen/VKzXvZ @haaswillian
+        const words = ["Chuan Yu Bistro"];
+        let i = 0;
+        let timer;
 
+        function typingEffect() {
+            let word = words[i].split("");
+            var loopTyping = function() {
+                if (word.length > 0) {
+                    document.getElementById('word').innerHTML += word.shift();
+                } else {
+                    deletingEffect();
+                    return false;
+                };
+                timer = setTimeout(loopTyping, 500);
+            };
+            loopTyping();
+        };
+
+        // function deletingEffect() {
+        //     let word = words[i].split("");
+        //     var loopDeleting = function() {
+        //         if (word.length > 0) {
+        //             word.pop();
+        //             document.getElementById('word').innerHTML = word.join("");
+        //         } else {
+        //             if (words.length > (i + 1)) {
+        //                 i++;
+        //             } else {
+        //                 i = 0;
+        //             };
+        //             typingEffect();
+        //             return false;
+        //         };
+        //         timer = setTimeout(loopDeleting, 200);
+        //     };
+        //     // loopDeleting();
+        //     timer = setTimeout(loopDeleting, 3000);
+        // };
+        typingEffect();
+    </script>
     <!-- loader -->
     <div id="loader" class="show fullscreen">
         <svg class="circular" width="48px" height="48px">
