@@ -619,7 +619,7 @@ textarea.form-control {
 
 .site-tab-nav li a.active {
   color: black;
-  color: #ff7a5c;
+  color: red;
   background: none;
   border-bottom: 2px solid #ff7a5c;
 }
