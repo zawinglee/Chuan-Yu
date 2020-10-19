@@ -273,6 +273,10 @@ textarea.form-control {
   box-shadow: none !important;
 }
 
+.btn:hover {
+  background: yellow !important;
+}
+
 .btn.btn-primary.btn-outline-primary {
   border-width: 2px;
   cursor: pointer;
@@ -1791,3 +1795,4 @@ textarea.form-control {
     stroke-dashoffset: -136px;
   }
 }
+
