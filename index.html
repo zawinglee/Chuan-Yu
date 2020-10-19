@@ -88,7 +88,7 @@
                             <div class="container flex" id="typewriter">
                                 <p class="heading mb-5 smoothscroll px-5 py-3" id="word"
                                    style="font-weight: bold; background: rgba(170,3,3,0.8); display: inline-block;"></p>
-                                    <p class="heading mb-5 smoothscroll px-5 py-3 blink" style="margin-left: -100px;" id="222">|</p>
+                                    <p class="heading mb-5 smoothscroll px-5 py-3 blink" style="margin-left: -100px;" id="cursor-to-removed">|</p>
                             </div>
                             <p><a class="smoothscroll btn btn-outline-white px-5 py-3" style="background:rgba(170,3,3,1); " target="_blank" href="https://goo.gl/maps/YhNSzXEQQM2QCszN6">
                               🚗 388 9th St, #268, <br>Oakland, CA 94607</a></p>
@@ -1165,9 +1165,8 @@
         let timer;
 
         function removeCursor() {
-            let ul = document.getElementById('typewriter');
-            // let liToKill = ul.chilxdNodes[1];
-            ul.removeChild(ul.childNodes[3]);
+            let ul = document.getElementById('cursor-to-removed');
+            ul.parentElement.removeChild(ul);
         }
 
         function typingEffect() {
