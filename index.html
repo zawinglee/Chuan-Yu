@@ -232,7 +232,8 @@
         </div>
 
         <script>
-            if (navigator.userAgent.match(/Mobile/)) {
+            if (navigator.userAgent.match(/Mobile/) || navigator.userAgent.match("/iPhone/i")) {
+                document.getElementById("debug").innerText = "success";
                 document.getElementById("video-div").innerHTML = "<video autoplay=\"autoplay\" width=\"100%\" loop=\"loop\" muted defaultMuted playsinline preload=\"auto\">" +
                     "<source src=\"video/chuanyu480p.mp4\" type=\"video/mp4\">" +
                     "</video>";
