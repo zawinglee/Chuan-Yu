@@ -295,8 +295,12 @@
                             <li><h2 class="heading mt-3" style="font-family: 'Pacifico', cursive;">Categories 菜列</h2></li>
                             <br>
                             <li class="nav-item">
-                                <a class="nav-link active" id="pills-sichuan-tab" data-toggle="pill"
-                                   href="#pills-sichuan" role="tab" aria-controls="pills-sichuan" aria-selected="true">Sichuan
+                                <a class="nav-link active" id="pills-new-tab" data-toggle="pill"
+                                   href="#pills-new" role="tab" aria-controls="pills-new" aria-selected="true">New Items 新品</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-sichuan-tab" data-toggle="pill"
+                                   href="#pills-sichuan" role="tab" aria-controls="pills-sichuan" aria-selected="false">Sichuan
                                     Cuisine 川菜類</a>
                             </li>
                             <li class="nav-item">
@@ -317,8 +321,31 @@
                             </li>
                         </ul>
                         <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade" id="pills-app" role="tabpanel" aria-labelledby="pills-app-tab">
+                            <div class="tab-pane fade show active" id="pills-new" role="tabpanel" aria-labelledby="pills-new-tab">
+                                <div class="d-block d-md-flex menu-food-item">
+                                    <div class="text order-1 mb-3">
+                                        <img src="images/new/烤鱼-min.jpg" alt="Image">
+                                        <h3>Grilled Fish</h3>
+                                        <p>烤鱼  <br>🌶🌶 (Medium Spicy中辣) <br>🦴 (Bone骨头) </p>
+                                    </div>
+                                    <div class="price order-2">
+                                        <strong>$29.99</strong>
+                                    </div>
+                                </div> <!-- .menu-food-item -->
 
+                                <div class="d-block d-md-flex menu-food-item">
+                                    <div class="text order-1 mb-3">
+                                        <img src="images/new/藤椒鱼-min.jpg" alt="Image">
+                                        <h3>Peppercorn Oil Fish Fillet</h3>
+                                        <p>藤椒鱼 <br>🌶🌶 (Medium Spicy中辣)</p>
+                                    </div>
+                                    <div class="price order-2">
+                                        <strong>$13.95</strong>
+                                    </div>
+                                </div> <!-- .menu-food-item -->
+                            </div>
+
+                            <div class="tab-pane fade" id="pills-app" role="tabpanel" aria-labelledby="pills-app-tab">
                                 <div class="d-block d-md-flex menu-food-item">
                                     <div class="text order-1 mb-3">
                                         <img src="images/cb/cb1.JPG" alt="Image">
@@ -397,7 +424,7 @@
                                 </div> <!-- .menu-food-item -->
 
                             </div>
-                            <div class="tab-pane fade show active" id="pills-sichuan" role="tabpanel"
+                            <div class="tab-pane fade" id="pills-sichuan" role="tabpanel"
                                  aria-labelledby="pills-sichuan-tab">
 
                                 <div class="d-block d-md-flex menu-food-item">
